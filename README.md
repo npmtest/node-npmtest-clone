@@ -1,7 +1,7 @@
 # test coverage for  [clone (v2.1.1)](https://github.com/pvorb/node-clone#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-clone.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-clone) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-clone.svg)](https://travis-ci.org/npmtest/node-npmtest-clone)
 #### deep cloning of objects and arrays
 
-[![NPM](https://nodei.co/npm/clone.png?downloads=true)](https://www.npmjs.com/package/clone)
+[![NPM](https://nodei.co/npm/clone.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/clone)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-clone/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-clone/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-clone/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-clone/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-clone/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-clone/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-clone/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-clone%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-clone/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-clone/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-clone/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-clone%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-clone/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-clone/build/test-report.html](https://npmtest.github.io/node-npmtest-clone/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-clone/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-clone/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-clone/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-clone/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-clone/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-clone/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-clone/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +34,6 @@
 {
     "author": {
         "name": "Paul Vorbach",
-        "email": "paul@vorba.ch",
         "url": "http://paul.vorba.ch/"
     },
     "bugs": {
@@ -37,27 +42,22 @@
     "contributors": [
         {
             "name": "Blake Miner",
-            "email": "miner.blake@gmail.com",
             "url": "http://www.blakeminer.com/"
         },
         {
             "name": "Tian You",
-            "email": "axqd001@gmail.com",
             "url": "http://blog.axqd.net/"
         },
         {
             "name": "George Stagas",
-            "email": "gstagas@gmail.com",
             "url": "http://stagas.com/"
         },
         {
             "name": "Tobiasz Cudnik",
-            "email": "tobiasz.cudnik@gmail.com",
             "url": "https://github.com/TobiaszCudnik"
         },
         {
             "name": "Pavel Lang",
-            "email": "langpavel@phpskelet.org",
             "url": "https://github.com/langpavel"
         },
         {
@@ -82,12 +82,10 @@
         },
         {
             "name": "Nathan MacInnes",
-            "email": "nathan@macinn.es",
             "url": "http://macinn.es/"
         },
         {
             "name": "Benjamin E. Coe",
-            "email": "ben@npmjs.com",
             "url": "https://twitter.com/benjamincoe"
         },
         {
@@ -96,7 +94,6 @@
         },
         {
             "name": "Róbert Oroszi",
-            "email": "robert+gh@oroszi.net",
             "url": "https://github.com/oroce"
         },
         {
@@ -121,7 +118,6 @@
         },
         {
             "name": "Misery Lee",
-            "email": "miserylee@foxmail.com",
             "url": "https://github.com/miserylee"
         },
         {
@@ -148,13 +144,11 @@
     "main": "clone.js",
     "maintainers": [
         {
-            "name": "pvorb",
-            "email": "paul@vorb.de"
+            "name": "pvorb"
         }
     ],
     "name": "clone",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/pvorb/node-clone.git"
