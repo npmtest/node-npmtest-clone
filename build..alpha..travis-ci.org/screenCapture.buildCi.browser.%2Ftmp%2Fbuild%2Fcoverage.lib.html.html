@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-clone/clone/clone.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-clone/node_modules/clone/clone.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-clone">npmtest-clone (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-clone/clone/clone.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-clone/node_modules/clone/clone.js</span></h1>
     <h2>
         
         Statements: <span class="metric">19.42% <small>(27 / 139)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-clone/clone/</a> &#187; clone.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-clone/node_modules/clone/</a> » clone.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -721,8 +719,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var clone = (function() {
 'use strict';
 &nbsp;
-<span class="fstat-no" title="function not covered" >function _instanceof(obj, type) {</span>
-<span class="cstat-no" title="statement not covered" >  return type != null &amp;&amp; obj instanceof type;</span>
+<span class="fstat-no" title="function not covered">function _instanceof(obj, type) {</span>
+<span class="cstat-no" title="statement not covered">  return type != null &amp;&amp; obj instanceof type;</span>
 }
 &nbsp;
 var nativeMap;
@@ -731,21 +729,21 @@ try {
 } catch(_) {
   // maybe a reference error because no `Map`. Give it a dummy value that no
   // value will ever be an instanceof.
-<span class="cstat-no" title="statement not covered" >  nativeMap = <span class="fstat-no" title="function not covered" >function() {</span>};</span>
+<span class="cstat-no" title="statement not covered">  nativeMap = <span class="fstat-no" title="function not covered">function() {</span>};</span>
 }
 &nbsp;
 var nativeSet;
 try {
   nativeSet = Set;
 } catch(_) {
-<span class="cstat-no" title="statement not covered" >  nativeSet = <span class="fstat-no" title="function not covered" >function() {</span>};</span>
+<span class="cstat-no" title="statement not covered">  nativeSet = <span class="fstat-no" title="function not covered">function() {</span>};</span>
 }
 &nbsp;
 var nativePromise;
 try {
   nativePromise = Promise;
 } catch(_) {
-<span class="cstat-no" title="statement not covered" >  nativePromise = <span class="fstat-no" title="function not covered" >function() {</span>};</span>
+<span class="cstat-no" title="statement not covered">  nativePromise = <span class="fstat-no" title="function not covered">function() {</span>};</span>
 }
 &nbsp;
 /**
@@ -769,151 +767,151 @@ try {
  *    should be cloned as well. Non-enumerable properties on the prototype
  *    chain will be ignored. (optional - false by default)
 */
-<span class="fstat-no" title="function not covered" >function clone(parent, circular, depth, prototype, includeNonEnumerable) {</span>
-<span class="cstat-no" title="statement not covered" >  if (typeof circular === 'object') {</span>
-<span class="cstat-no" title="statement not covered" >    depth = circular.depth;</span>
-<span class="cstat-no" title="statement not covered" >    prototype = circular.prototype;</span>
-<span class="cstat-no" title="statement not covered" >    includeNonEnumerable = circular.includeNonEnumerable;</span>
-<span class="cstat-no" title="statement not covered" >    circular = circular.circular;</span>
+<span class="fstat-no" title="function not covered">function clone(parent, circular, depth, prototype, includeNonEnumerable) {</span>
+<span class="cstat-no" title="statement not covered">  if (typeof circular === 'object') {</span>
+<span class="cstat-no" title="statement not covered">    depth = circular.depth;</span>
+<span class="cstat-no" title="statement not covered">    prototype = circular.prototype;</span>
+<span class="cstat-no" title="statement not covered">    includeNonEnumerable = circular.includeNonEnumerable;</span>
+<span class="cstat-no" title="statement not covered">    circular = circular.circular;</span>
   }
   // maintain two arrays for circular references, where corresponding parents
   // and children have the same index
-<span class="cstat-no" title="statement not covered" >  var allParents = [];</span>
-<span class="cstat-no" title="statement not covered" >  var allChildren = [];</span>
+<span class="cstat-no" title="statement not covered">  var allParents = [];</span>
+<span class="cstat-no" title="statement not covered">  var allChildren = [];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var useBuffer = typeof Buffer != 'undefined';</span>
+<span class="cstat-no" title="statement not covered">  var useBuffer = typeof Buffer != 'undefined';</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (typeof circular == 'undefined')</span>
-<span class="cstat-no" title="statement not covered" >    circular = true;</span>
+<span class="cstat-no" title="statement not covered">  if (typeof circular == 'undefined')</span>
+<span class="cstat-no" title="statement not covered">    circular = true;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (typeof depth == 'undefined')</span>
-<span class="cstat-no" title="statement not covered" >    depth = Infinity;</span>
+<span class="cstat-no" title="statement not covered">  if (typeof depth == 'undefined')</span>
+<span class="cstat-no" title="statement not covered">    depth = Infinity;</span>
 &nbsp;
   // recurse this function so we don't reset allParents and allChildren
-<span class="fstat-no" title="function not covered" >  function _clone(parent, depth) {</span>
+<span class="fstat-no" title="function not covered">  function _clone(parent, depth) {</span>
     // cloning null always returns null
-<span class="cstat-no" title="statement not covered" >    if (parent === null)</span>
-<span class="cstat-no" title="statement not covered" >      return null;</span>
+<span class="cstat-no" title="statement not covered">    if (parent === null)</span>
+<span class="cstat-no" title="statement not covered">      return null;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (depth === 0)</span>
-<span class="cstat-no" title="statement not covered" >      return parent;</span>
+<span class="cstat-no" title="statement not covered">    if (depth === 0)</span>
+<span class="cstat-no" title="statement not covered">      return parent;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var child;</span>
-<span class="cstat-no" title="statement not covered" >    var proto;</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof parent != 'object') {</span>
-<span class="cstat-no" title="statement not covered" >      return parent;</span>
+<span class="cstat-no" title="statement not covered">    var child;</span>
+<span class="cstat-no" title="statement not covered">    var proto;</span>
+<span class="cstat-no" title="statement not covered">    if (typeof parent != 'object') {</span>
+<span class="cstat-no" title="statement not covered">      return parent;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (_instanceof(parent, nativeMap)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new nativeMap();</span>
-    } else <span class="cstat-no" title="statement not covered" >if (_instanceof(parent, nativeSet)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new nativeSet();</span>
-    } else <span class="cstat-no" title="statement not covered" >if (_instanceof(parent, nativePromise)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new nativePromise(<span class="fstat-no" title="function not covered" >function (resolve, reject) {</span></span>
-<span class="cstat-no" title="statement not covered" >        parent.then(<span class="fstat-no" title="function not covered" >function(value) {</span></span>
-<span class="cstat-no" title="statement not covered" >          resolve(_clone(value, depth - 1));</span>
-        }, <span class="fstat-no" title="function not covered" >function(err) {</span>
-<span class="cstat-no" title="statement not covered" >          reject(_clone(err, depth - 1));</span>
+<span class="cstat-no" title="statement not covered">    if (_instanceof(parent, nativeMap)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new nativeMap();</span>
+    } else <span class="cstat-no" title="statement not covered">if (_instanceof(parent, nativeSet)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new nativeSet();</span>
+    } else <span class="cstat-no" title="statement not covered">if (_instanceof(parent, nativePromise)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new nativePromise(<span class="fstat-no" title="function not covered">function (resolve, reject) {</span></span>
+<span class="cstat-no" title="statement not covered">        parent.then(<span class="fstat-no" title="function not covered">function(value) {</span></span>
+<span class="cstat-no" title="statement not covered">          resolve(_clone(value, depth - 1));</span>
+        }, <span class="fstat-no" title="function not covered">function(err) {</span>
+<span class="cstat-no" title="statement not covered">          reject(_clone(err, depth - 1));</span>
         });
       });
-    } else <span class="cstat-no" title="statement not covered" >if (clone.__isArray(parent)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = [];</span>
-    } else <span class="cstat-no" title="statement not covered" >if (clone.__isRegExp(parent)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new RegExp(parent.source, __getRegExpFlags(parent));</span>
-<span class="cstat-no" title="statement not covered" >      if (parent.lastIndex) <span class="cstat-no" title="statement not covered" >child.lastIndex = parent.lastIndex;</span></span>
-    } else <span class="cstat-no" title="statement not covered" >if (clone.__isDate(parent)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new Date(parent.getTime());</span>
-    } else <span class="cstat-no" title="statement not covered" >if (useBuffer &amp;&amp; Buffer.isBuffer(parent)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = new Buffer(parent.length);</span>
-<span class="cstat-no" title="statement not covered" >      parent.copy(child);</span>
-<span class="cstat-no" title="statement not covered" >      return child;</span>
-    } else <span class="cstat-no" title="statement not covered" >if (_instanceof(parent, Error)) {</span>
-<span class="cstat-no" title="statement not covered" >      child = Object.create(parent);</span>
+    } else <span class="cstat-no" title="statement not covered">if (clone.__isArray(parent)) {</span>
+<span class="cstat-no" title="statement not covered">      child = [];</span>
+    } else <span class="cstat-no" title="statement not covered">if (clone.__isRegExp(parent)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new RegExp(parent.source, __getRegExpFlags(parent));</span>
+<span class="cstat-no" title="statement not covered">      if (parent.lastIndex) <span class="cstat-no" title="statement not covered">child.lastIndex = parent.lastIndex;</span></span>
+    } else <span class="cstat-no" title="statement not covered">if (clone.__isDate(parent)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new Date(parent.getTime());</span>
+    } else <span class="cstat-no" title="statement not covered">if (useBuffer &amp;&amp; Buffer.isBuffer(parent)) {</span>
+<span class="cstat-no" title="statement not covered">      child = new Buffer(parent.length);</span>
+<span class="cstat-no" title="statement not covered">      parent.copy(child);</span>
+<span class="cstat-no" title="statement not covered">      return child;</span>
+    } else <span class="cstat-no" title="statement not covered">if (_instanceof(parent, Error)) {</span>
+<span class="cstat-no" title="statement not covered">      child = Object.create(parent);</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      if (typeof prototype == 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >        proto = Object.getPrototypeOf(parent);</span>
-<span class="cstat-no" title="statement not covered" >        child = Object.create(proto);</span>
+<span class="cstat-no" title="statement not covered">      if (typeof prototype == 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">        proto = Object.getPrototypeOf(parent);</span>
+<span class="cstat-no" title="statement not covered">        child = Object.create(proto);</span>
       }
       else {
-<span class="cstat-no" title="statement not covered" >        child = Object.create(prototype);</span>
-<span class="cstat-no" title="statement not covered" >        proto = prototype;</span>
+<span class="cstat-no" title="statement not covered">        child = Object.create(prototype);</span>
+<span class="cstat-no" title="statement not covered">        proto = prototype;</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (circular) {</span>
-<span class="cstat-no" title="statement not covered" >      var index = allParents.indexOf(parent);</span>
+<span class="cstat-no" title="statement not covered">    if (circular) {</span>
+<span class="cstat-no" title="statement not covered">      var index = allParents.indexOf(parent);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (index != -1) {</span>
-<span class="cstat-no" title="statement not covered" >        return allChildren[index];</span>
+<span class="cstat-no" title="statement not covered">      if (index != -1) {</span>
+<span class="cstat-no" title="statement not covered">        return allChildren[index];</span>
       }
-<span class="cstat-no" title="statement not covered" >      allParents.push(parent);</span>
-<span class="cstat-no" title="statement not covered" >      allChildren.push(child);</span>
+<span class="cstat-no" title="statement not covered">      allParents.push(parent);</span>
+<span class="cstat-no" title="statement not covered">      allChildren.push(child);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (_instanceof(parent, nativeMap)) {</span>
-<span class="cstat-no" title="statement not covered" >      parent.forEach(<span class="fstat-no" title="function not covered" >function(value, key) {</span></span>
-<span class="cstat-no" title="statement not covered" >        var keyChild = _clone(key, depth - 1);</span>
-<span class="cstat-no" title="statement not covered" >        var valueChild = _clone(value, depth - 1);</span>
-<span class="cstat-no" title="statement not covered" >        child.set(keyChild, valueChild);</span>
+<span class="cstat-no" title="statement not covered">    if (_instanceof(parent, nativeMap)) {</span>
+<span class="cstat-no" title="statement not covered">      parent.forEach(<span class="fstat-no" title="function not covered">function(value, key) {</span></span>
+<span class="cstat-no" title="statement not covered">        var keyChild = _clone(key, depth - 1);</span>
+<span class="cstat-no" title="statement not covered">        var valueChild = _clone(value, depth - 1);</span>
+<span class="cstat-no" title="statement not covered">        child.set(keyChild, valueChild);</span>
       });
     }
-<span class="cstat-no" title="statement not covered" >    if (_instanceof(parent, nativeSet)) {</span>
-<span class="cstat-no" title="statement not covered" >      parent.forEach(<span class="fstat-no" title="function not covered" >function(value) {</span></span>
-<span class="cstat-no" title="statement not covered" >        var entryChild = _clone(value, depth - 1);</span>
-<span class="cstat-no" title="statement not covered" >        child.add(entryChild);</span>
+<span class="cstat-no" title="statement not covered">    if (_instanceof(parent, nativeSet)) {</span>
+<span class="cstat-no" title="statement not covered">      parent.forEach(<span class="fstat-no" title="function not covered">function(value) {</span></span>
+<span class="cstat-no" title="statement not covered">        var entryChild = _clone(value, depth - 1);</span>
+<span class="cstat-no" title="statement not covered">        child.add(entryChild);</span>
       });
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    for (var i in parent) {</span>
-<span class="cstat-no" title="statement not covered" >      var attrs;</span>
-<span class="cstat-no" title="statement not covered" >      if (proto) {</span>
-<span class="cstat-no" title="statement not covered" >        attrs = Object.getOwnPropertyDescriptor(proto, i);</span>
+<span class="cstat-no" title="statement not covered">    for (var i in parent) {</span>
+<span class="cstat-no" title="statement not covered">      var attrs;</span>
+<span class="cstat-no" title="statement not covered">      if (proto) {</span>
+<span class="cstat-no" title="statement not covered">        attrs = Object.getOwnPropertyDescriptor(proto, i);</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (attrs &amp;&amp; attrs.set == null) {</span>
-<span class="cstat-no" title="statement not covered" >        continue;</span>
+<span class="cstat-no" title="statement not covered">      if (attrs &amp;&amp; attrs.set == null) {</span>
+<span class="cstat-no" title="statement not covered">        continue;</span>
       }
-<span class="cstat-no" title="statement not covered" >      child[i] = _clone(parent[i], depth - 1);</span>
+<span class="cstat-no" title="statement not covered">      child[i] = _clone(parent[i], depth - 1);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (Object.getOwnPropertySymbols) {</span>
-<span class="cstat-no" title="statement not covered" >      var symbols = Object.getOwnPropertySymbols(parent);</span>
-<span class="cstat-no" title="statement not covered" >      for (var i = 0; i &lt; symbols.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">    if (Object.getOwnPropertySymbols) {</span>
+<span class="cstat-no" title="statement not covered">      var symbols = Object.getOwnPropertySymbols(parent);</span>
+<span class="cstat-no" title="statement not covered">      for (var i = 0; i &lt; symbols.length; i++) {</span>
         // Don't need to worry about cloning a symbol because it is a primitive,
         // like a number or string.
-<span class="cstat-no" title="statement not covered" >        var symbol = symbols[i];</span>
-<span class="cstat-no" title="statement not covered" >        var descriptor = Object.getOwnPropertyDescriptor(parent, symbol);</span>
-<span class="cstat-no" title="statement not covered" >        if (descriptor &amp;&amp; !descriptor.enumerable &amp;&amp; !includeNonEnumerable) {</span>
-<span class="cstat-no" title="statement not covered" >          continue;</span>
+<span class="cstat-no" title="statement not covered">        var symbol = symbols[i];</span>
+<span class="cstat-no" title="statement not covered">        var descriptor = Object.getOwnPropertyDescriptor(parent, symbol);</span>
+<span class="cstat-no" title="statement not covered">        if (descriptor &amp;&amp; !descriptor.enumerable &amp;&amp; !includeNonEnumerable) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
         }
-<span class="cstat-no" title="statement not covered" >        child[symbol] = _clone(parent[symbol], depth - 1);</span>
-<span class="cstat-no" title="statement not covered" >        if (!descriptor.enumerable) {</span>
-<span class="cstat-no" title="statement not covered" >          Object.defineProperty(child, symbol, {</span>
+<span class="cstat-no" title="statement not covered">        child[symbol] = _clone(parent[symbol], depth - 1);</span>
+<span class="cstat-no" title="statement not covered">        if (!descriptor.enumerable) {</span>
+<span class="cstat-no" title="statement not covered">          Object.defineProperty(child, symbol, {</span>
             enumerable: false
           });
         }
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (includeNonEnumerable) {</span>
-<span class="cstat-no" title="statement not covered" >      var allPropertyNames = Object.getOwnPropertyNames(parent);</span>
-<span class="cstat-no" title="statement not covered" >      for (var i = 0; i &lt; allPropertyNames.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        var propertyName = allPropertyNames[i];</span>
-<span class="cstat-no" title="statement not covered" >        var descriptor = Object.getOwnPropertyDescriptor(parent, propertyName);</span>
-<span class="cstat-no" title="statement not covered" >        if (descriptor &amp;&amp; descriptor.enumerable) {</span>
-<span class="cstat-no" title="statement not covered" >          continue;</span>
+<span class="cstat-no" title="statement not covered">    if (includeNonEnumerable) {</span>
+<span class="cstat-no" title="statement not covered">      var allPropertyNames = Object.getOwnPropertyNames(parent);</span>
+<span class="cstat-no" title="statement not covered">      for (var i = 0; i &lt; allPropertyNames.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">        var propertyName = allPropertyNames[i];</span>
+<span class="cstat-no" title="statement not covered">        var descriptor = Object.getOwnPropertyDescriptor(parent, propertyName);</span>
+<span class="cstat-no" title="statement not covered">        if (descriptor &amp;&amp; descriptor.enumerable) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
         }
-<span class="cstat-no" title="statement not covered" >        child[propertyName] = _clone(parent[propertyName], depth - 1);</span>
-<span class="cstat-no" title="statement not covered" >        Object.defineProperty(child, propertyName, {</span>
+<span class="cstat-no" title="statement not covered">        child[propertyName] = _clone(parent[propertyName], depth - 1);</span>
+<span class="cstat-no" title="statement not covered">        Object.defineProperty(child, propertyName, {</span>
           enumerable: false
         });
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return child;</span>
+<span class="cstat-no" title="statement not covered">    return child;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return _clone(parent, depth);</span>
+<span class="cstat-no" title="statement not covered">  return _clone(parent, depth);</span>
 }
 &nbsp;
 /**
@@ -923,58 +921,59 @@ try {
  * USE WITH CAUTION! This may not behave as you wish if you do not know how this
  * works.
  */
-clone.clonePrototype = <span class="fstat-no" title="function not covered" >function clonePrototype(parent) {</span>
-<span class="cstat-no" title="statement not covered" >  if (parent === null)</span>
-<span class="cstat-no" title="statement not covered" >    return null;</span>
+clone.clonePrototype = <span class="fstat-no" title="function not covered">function clonePrototype(parent) {</span>
+<span class="cstat-no" title="statement not covered">  if (parent === null)</span>
+<span class="cstat-no" title="statement not covered">    return null;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var c = <span class="fstat-no" title="function not covered" >function () {</span>};</span>
-<span class="cstat-no" title="statement not covered" >  c.prototype = parent;</span>
-<span class="cstat-no" title="statement not covered" >  return new c();</span>
+<span class="cstat-no" title="statement not covered">  var c = <span class="fstat-no" title="function not covered">function () {</span>};</span>
+<span class="cstat-no" title="statement not covered">  c.prototype = parent;</span>
+<span class="cstat-no" title="statement not covered">  return new c();</span>
 };
 &nbsp;
 // private utility functions
 &nbsp;
-<span class="fstat-no" title="function not covered" >function __objToStr(o) {</span>
-<span class="cstat-no" title="statement not covered" >  return Object.prototype.toString.call(o);</span>
+<span class="fstat-no" title="function not covered">function __objToStr(o) {</span>
+<span class="cstat-no" title="statement not covered">  return Object.prototype.toString.call(o);</span>
 }
 clone.__objToStr = __objToStr;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function __isDate(o) {</span>
-<span class="cstat-no" title="statement not covered" >  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object Date]';</span>
+<span class="fstat-no" title="function not covered">function __isDate(o) {</span>
+<span class="cstat-no" title="statement not covered">  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object Date]';</span>
 }
 clone.__isDate = __isDate;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function __isArray(o) {</span>
-<span class="cstat-no" title="statement not covered" >  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object Array]';</span>
+<span class="fstat-no" title="function not covered">function __isArray(o) {</span>
+<span class="cstat-no" title="statement not covered">  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object Array]';</span>
 }
 clone.__isArray = __isArray;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function __isRegExp(o) {</span>
-<span class="cstat-no" title="statement not covered" >  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object RegExp]';</span>
+<span class="fstat-no" title="function not covered">function __isRegExp(o) {</span>
+<span class="cstat-no" title="statement not covered">  return typeof o === 'object' &amp;&amp; __objToStr(o) === '[object RegExp]';</span>
 }
 clone.__isRegExp = __isRegExp;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function __getRegExpFlags(re) {</span>
-<span class="cstat-no" title="statement not covered" >  var flags = '';</span>
-<span class="cstat-no" title="statement not covered" >  if (re.global) <span class="cstat-no" title="statement not covered" >flags += 'g';</span></span>
-<span class="cstat-no" title="statement not covered" >  if (re.ignoreCase) <span class="cstat-no" title="statement not covered" >flags += 'i';</span></span>
-<span class="cstat-no" title="statement not covered" >  if (re.multiline) <span class="cstat-no" title="statement not covered" >flags += 'm';</span></span>
-<span class="cstat-no" title="statement not covered" >  return flags;</span>
+<span class="fstat-no" title="function not covered">function __getRegExpFlags(re) {</span>
+<span class="cstat-no" title="statement not covered">  var flags = '';</span>
+<span class="cstat-no" title="statement not covered">  if (re.global) <span class="cstat-no" title="statement not covered">flags += 'g';</span></span>
+<span class="cstat-no" title="statement not covered">  if (re.ignoreCase) <span class="cstat-no" title="statement not covered">flags += 'i';</span></span>
+<span class="cstat-no" title="statement not covered">  if (re.multiline) <span class="cstat-no" title="statement not covered">flags += 'm';</span></span>
+<span class="cstat-no" title="statement not covered">  return flags;</span>
 }
 clone.__getRegExpFlags = __getRegExpFlags;
 &nbsp;
 return clone;
 })();
 &nbsp;
-<span class="missing-if-branch" title="else path not taken" >E</span>if (typeof module === 'object' &amp;&amp; module.exports) {
+<span class="missing-if-branch" title="else path not taken">E</span>if (typeof module === 'object' &amp;&amp; module.exports) {
   module.exports = clone;
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 13:15:20 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 16:28:52 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
