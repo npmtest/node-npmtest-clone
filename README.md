@@ -1,4 +1,7 @@
-# test coverage for  [clone (v2.1.1)](https://github.com/pvorb/node-clone#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-clone.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-clone) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-clone.svg)](https://travis-ci.org/npmtest/node-npmtest-clone)
+# npmtest-clone
+
+#### basic test coverage for  [clone (v2.1.1)](https://github.com/pvorb/node-clone#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-clone.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-clone) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-clone.svg)](https://travis-ci.org/npmtest/node-npmtest-clone)
+
 #### deep cloning of objects and arrays
 
 [![NPM](https://nodei.co/npm/clone.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/clone)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-clone/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-clone/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-clone/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-clone/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-clone/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-clone/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-clone/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-clone/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-clone/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-clone/build/coverage.html/index.html)
 
@@ -163,7 +166,8 @@
         "function",
         "date"
     ],
-    "version": "2.1.1"
+    "version": "2.1.1",
+    "bin": {}
 }
 ```
 
